@@ -1,2 +1,2 @@
-# FunctionTest
-Django &amp; Function test
+# TDD
+Django &amp; TDD
