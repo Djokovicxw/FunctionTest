@@ -1,5 +1,5 @@
 from django.urls import resolve
-from lists.model import Item
+from lists.models import Item
 from django.template.loader import render_to_string
 from django.test import TestCase
 from lists.views import home_page
@@ -20,7 +20,7 @@ class ItemModelTest(TestCase):
         self.assertEqual(saved_items.count(), 2)
 
         first_saved_item = saved_items[0]
-        second_saved-item = saved_item[1]
+        second_saved_item = saved_items[1]
         self.assertEqual(first_saved_item.text, 'The first list item')
         self.assertEqual(second_saved_item.text, 'The second list item')
 
